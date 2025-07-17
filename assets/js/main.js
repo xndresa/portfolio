@@ -28,38 +28,6 @@ links.forEach((link) => {
     })
 })
 
-/*=============== SERVICES MODAL ===============*/
-const serviceButtons = document.querySelectorAll('.service_btn');
-const modals = document.querySelectorAll('.service_modal');
-const closebtn = document.querySelectorAll('.service_modal_close');
-const overlay = document.createElement('div');
-
-//add overlay to body
-overlay.classList.add('modal_overlay');
-document.body.appendChild(overlay);
-
-//open modal
-serviceButtons.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-        modals[index].classList.add('active');
-        overlay.classList.add('active');
-    });
-});
-
-//close modal
-closebtn.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-        modals[index].classList.remove('active');
-        overlay.classList.remove('active');
-    });
-});
-
-//close modal when clicking on overlay
-overlay.addEventListener('click', () => {
-    modals.forEach((modal) => modal.classList.remove('active'));
-    overlay.classList.remove('active');
-});
-
 /*=============== PORTFOLIO SECTION ===============*/
 document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll('.filter_btn');
