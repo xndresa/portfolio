@@ -1,5 +1,3 @@
-//   NOW THAT YOU GOT THE CODE, YOU SUBSCRIBE TO MY CHANNEL NERDYCODECRAFTER PLEASE! I REALLY NEED YOUR HELP THERE:
-// https://www.youtube.com/@NerdyCodeCrafter?sub_confirmation=1  
 
 /*=============== SHOW MENU ===============*/
 const menu = document.querySelector('.menu');
