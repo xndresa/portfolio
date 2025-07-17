@@ -1,306 +1,402 @@
-<!DOCTYPE html>
-   <html lang="pt-BR">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png">
-
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
-
-      <!--=============== TITLE ===============-->
-      <title>PORTFOLIO - Andresa Alves</title>
-   </head>
-   <body>
-      
-      <!--==================== HEADER/NAV ====================-->
-      <header class="header" id="header">
-         <div class="head_name" data-reveal>
-            <h3>Andresa Alves</h3>
-            <p>Analista de Dados Jr.</p>
-         </div>
-         <div class="contactChat_head icns" data-reveal>
-            <a href="mailto:andresaalves9@gmail.com" class="email icon">andresaalves9@gmail.com</a>
-            <a href="tel:(21)973021478" class="phone icon">(21)973021478</a>
-         </div>
-      </header>
-
-      <!-- MENU -->
-      <div class="menu">
-         <span class="menu_icon"></span>
+<html class="scroll-smooth" lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Portfólio P&amp;B - Claro/Escuro
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   html {
+      scroll-behavior: smooth;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black dark:bg-black dark:text-white font-inter min-h-screen flex flex-col">
+  <header class="sticky top-0 z-50 bg-white dark:bg-black border-b border-gray-300 dark:border-gray-700">
+   <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-2xl font-bold tracking-wide" href="#home">
+     MeuPortfólio
+    </a>
+    <ul class="hidden md:flex space-x-8 font-semibold">
+     <li>
+      <a class="hover:underline focus:underline" href="#home">
+       Início
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline focus:underline" href="#sobre">
+       Sobre Mim
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline focus:underline" href="#projetos">
+       Projetos
+      </a>
+     </li>
+     <li>
+      <a class="hover:underline focus:underline" href="#contato">
+       Contato
+      </a>
+     </li>
+    </ul>
+    <div class="flex items-center space-x-4">
+     <button aria-label="Alternar tema claro e escuro" class="text-xl focus:outline-none" id="theme-toggle" title="Alternar tema claro e escuro">
+      <i class="fas fa-moon">
+      </i>
+     </button>
+     <button aria-label="Abrir menu" class="md:hidden text-2xl focus:outline-none" id="menu-toggle">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </nav>
+   <div class="hidden md:hidden bg-white dark:bg-black border-t border-gray-300 dark:border-gray-700" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 px-6 py-4 font-semibold">
+     <li>
+      <a class="block hover:underline focus:underline" href="#home">
+       Início
+      </a>
+     </li>
+     <li>
+      <a class="block hover:underline focus:underline" href="#sobre">
+       Sobre Mim
+      </a>
+     </li>
+     <li>
+      <a class="block hover:underline focus:underline" href="#projetos">
+       Projetos
+      </a>
+     </li>
+     <li>
+      <a class="block hover:underline focus:underline" href="#contato">
+       Contato
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-12 space-y-24">
+   <!-- Página Inicial -->
+   <section class="flex flex-col items-center justify-center text-center space-y-6 min-h-[60vh]" id="home">
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+     Olá, eu sou
+     <span class="text-gray-700 dark:text-gray-300">
+      Seu Nome
+     </span>
+    </h1>
+    <p class="max-w-xl text-lg md:text-xl text-gray-600 dark:text-gray-400">
+     Desenvolvedor Front-end | Criador de experiências digitais elegantes e funcionais.
+    </p>
+    <a class="inline-block mt-6 px-8 py-3 border-2 border-black dark:border-white rounded-md font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="#projetos">
+     Ver Projetos
+    </a>
+    <img alt="Imagem de boas-vindas com design moderno preto e branco, mostrando um laptop e código na tela" class="mt-12 w-full max-w-lg rounded-lg shadow-lg" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/922794d4-0959-43ab-9878-231142d42e32.jpg" width="600"/>
+   </section>
+   <!-- Sobre Mim -->
+   <section class="max-w-4xl mx-auto space-y-12" id="sobre">
+    <h2 class="text-3xl font-bold border-b-4 border-black dark:border-white pb-2 w-max">
+     Sobre Mim
+    </h2>
+    <div class="flex flex-col md:flex-row md:space-x-12 items-center md:items-start">
+     <img alt="Foto de perfil preto e branco com fundo limpo, mostrando uma pessoa sorridente com óculos e cabelo curto" class="rounded-full w-48 h-48 object-cover mb-6 md:mb-0 shadow-md" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a5e1241f-5b10-4e73-be53-c845966597e0.jpg" width="300"/>
+     <div class="text-lg text-gray-700 dark:text-gray-300 space-y-6">
+      <p>
+       Olá! Meu nome é Seu Nome, sou um desenvolvedor front-end apaixonado por criar interfaces elegantes, acessíveis e responsivas. Tenho experiência em HTML, CSS, JavaScript e frameworks modernos como React e Vue.
+      </p>
+      <p>
+       Minha missão é transformar ideias em experiências digitais que encantam e funcionam perfeitamente em qualquer dispositivo. Acredito no poder do design minimalista e na importância da usabilidade.
+      </p>
+      <p>
+       Além do desenvolvimento, gosto de estudar novas tecnologias, contribuir para projetos open source e compartilhar conhecimento com a comunidade.
+      </p>
+      <ul class="list-disc list-inside space-y-2">
+       <li>
+        <strong>
+         Experiência:
+        </strong>
+        5 anos em desenvolvimento web
+       </li>
+       <li>
+        <strong>
+         Habilidades:
+        </strong>
+        HTML, CSS, JavaScript, React, Vue, Tailwind CSS, Git
+       </li>
+       <li>
+        <strong>
+         Idiomas:
+        </strong>
+        Português (nativo), Inglês (avançado)
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
+   <!-- Projetos -->
+   <section class="max-w-7xl mx-auto space-y-12" id="projetos">
+    <h2 class="text-3xl font-bold border-b-4 border-black dark:border-white pb-2 w-max">
+     Projetos
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+     <article class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+      <img alt="Imagem do projeto 1 mostrando um dashboard admin com gráficos e tabelas em preto e branco" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7e21aa54-8716-417c-9f5a-dcd538ed3f94.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        Dashboard Admin
+       </h3>
+       <p class="text-gray-700 dark:text-gray-300 flex-grow">
+        Um painel administrativo responsivo e minimalista para gerenciar dados e usuários, construído com React e Tailwind CSS.
+       </p>
+       <div class="mt-4 flex space-x-4 items-center">
+        <a aria-label="Ver projeto Dashboard Admin no GitHub" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://github.com/seunome/dashboard-admin" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-github mr-2">
+         </i>
+         GitHub
+        </a>
+        <a aria-label="Ver demo do projeto Dashboard Admin" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://seunome.github.io/dashboard-admin" rel="noopener noreferrer" target="_blank">
+         <i class="fas fa-external-link-alt mr-2">
+         </i>
+         Demo
+        </a>
+       </div>
       </div>
-      <div class="menu_links">
-         <a href="#home">Início</a>
-         <a href="#about">Sobre</a>
-         <a href="#portfolio">Projetos</a>
-         <a href="#contact">Contatos</a>
+     </article>
+     <article class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+      <img alt="Imagem do projeto 2 mostrando um site portfólio minimalista em preto e branco com seções de projetos e contato" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2bcb1303-d3f8-4a61-43e4-817a7e4053ae.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        Site Portfólio
+       </h3>
+       <p class="text-gray-700 dark:text-gray-300 flex-grow">
+        Um site portfólio responsivo e elegante, desenvolvido com HTML, CSS e JavaScript puro, focado em acessibilidade e performance.
+       </p>
+       <div class="mt-4 flex space-x-4 items-center">
+        <a aria-label="Ver projeto Site Portfólio no GitHub" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://github.com/seunome/site-portfolio" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-github mr-2">
+         </i>
+         GitHub
+        </a>
+        <a aria-label="Ver demo do projeto Site Portfólio" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://seunome.github.io/site-portfolio" rel="noopener noreferrer" target="_blank">
+         <i class="fas fa-external-link-alt mr-2">
+         </i>
+         Demo
+        </a>
+       </div>
       </div>
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <div class="home_section">
-               <div class="icns icons" data-reveal="left">
-                  <a href="" class="icon"><i class="ri-linkedin-box-line"></i></a>
-                  <a href="" class="icon"><i class="ri-instagram-line"></i></a>
-                  <a href="" class="icon"><i class="ri-github-line"></i></a>
-               </div>
-               <div class="image_container">
-                  <img src="assets/img/home.jpg" alt="">
-                  <div class="new_btn">
-                     <a href="#portfolio">Meu Portfólio <i class="ri-arrow-right-line"></i></a>
-                  </div>
-               </div>
-               <div class="home_content" data-reveal="right">
-                  <div class="drop">
-                     <div class="home_text">
-                        <h3>Olá, sou <span>Andresa</span></h3>
-                        <p>Analista de Dados Jr, apaixonada em transformar números em histórias. Habilidade em manipulação, visualização e análise de dados. Let's data!.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <section id="about" class="about">
-            <div class="abtImg_profile" data-reveal="left">
-               <div class="abtImg_border one"></div>
-               <div class="abtImg_border two"></div>
-               <div class="img_box">
-                  <img src="assets/img/about.jpg" alt="" class="abtImg" width="100%">
-               </div>
-               <div class="profile_name">
-                  <div class="sub_title">Andresa Alves</div>
-                  <a href="#contact" class="abt_contactLink">
-                     <span class="circle"></span>
-                     <div>Estou disponível para trabalhos, contrate-me!</div>
-                  </a>
-               </div>
-            </div>
-            <div class="abt_content" data-reveal="right">
-               <div class="text_wrapper">
-                  <div class="top">Sobre</div>
-                  <div class="bottom" aria-hidden="true">Sobre</div>
-               </div>
-               <h2 class="sub_title">Biografia</h2>
-               <p class="section_desc">
-                  Hi! I'm, a passionate Web Designer & Creative Developer. I specialize in creating innovative and user-centric designs with a touch of creativity. Let's build something amazing together! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, nobis. Assumenda mollitia modi eius quas sit quia sapiente esse minima! A explicabo molestiae illum minus sunt cum fuga enim voluptatibus.
-               </p>
-               <table class="about_table">
-                  <tr>
-                     <th>Nome: </th>
-                     <td>Andresa</td>
-                  </tr>
-                  <tr>
-                     <th>Aniversário: </th>
-                     <td>9 de março, 1998</td>
-                  </tr>
-                  <tr>
-                     <th>Telefone: </th>
-                     <td><a href="tel:+55(21)973021478" class="link_underline">(21)973021478</a></td>
-                  </tr>
-                  <tr>
-                     <th>Email: </th>
-                     <td><a href="mailto:andresaalves9@gmail.com" class="link_underline">andresaalves9@gmail.com</a></td>
-                  </tr>
-                  <tr>
-                     <th>Linkedin: </th>
-                     <td><a href="https://www.linkedin.com/in/andresa9" class="link_underline">Andresa9</a></td>
-                  </tr>
-               </table>
-               <button class="download_cv">
-                  <i class="ri-download-cloud-line icn"></i>
-                  <span>Download CV</span>
-               </button>
-            </div>
-         </section>
-
-         <!--==================== PROJECTS ====================-->
-         <section class="portfolio section grid" id="portfolio">
-            <div class="text_wrapper">
-               <div class="top">Portfolio</div>
-               <div class="bottom" aria-hidden="true">Portfolio</div>
-            </div>
-            <div class="filter" data-reveal>
-               <button class="filter_btn new_btn" data-category="all">Todo</button>
-               <button class="filter_btn new_btn" data-category="design">desenvolvimento</button>
-               <button class="filter_btn new_btn" data-category="development">Análise de</button>
-               <button class="filter_btn new_btn" data-category="ui-ux">Dados Jr</button>
-            </div>
-            <div class="timeline">
-               <div class="timeline_item design">
-                  <img src="assets/img/project-1.jpg" alt="design">
-                  <div class="timeline_year">2024</div>
-                  <div class="project_info" data-reveal="right">
-                     <h3>Manipulação de Dados</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-               </div>
-               <div class="timeline_item development">
-                  <img src="assets/img/project-2.jpg" alt="development">
-                  <div class="timeline_year">2025</div>
-                  <div class="project_info" data-reveal="right">
-                     <h3>Dashboard - Power BI</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-               </div>
-               <div class="timeline_item ui-ux">
-                  <img src="assets/img/project-3.jpg" alt="UI/UX">
-                  <div class="timeline_year">2025</div>
-                  <div class="project_info" data-reveal="right">
-                     <h3>Banco de Dados</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-               </div>
-               <div class="timeline_item design">
-                  <img src="assets/img/project-1.jpg" alt="design">
-                  <div class="timeline_year">2024</div>
-                  <div class="project_info" data-reveal="right">
-                     <h3>Análise de Dados</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-               </div>
-               <div class="timeline_item development">
-                  <img src="assets/img/project-2.jpg" alt="development">
-                  <div class="timeline_year">2024</div>
-                  <div class="project_info" data-reveal="right">
-                     <h3>Visualização de Dados</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-               </div>
-               <div class="timeline_item ui-ux">
-                  <img src="assets/img/project-3.jpg" alt="UI/UX">
-                  <div class="timeline_year">2025</div>
-                  <div class="project_info" data-reveal="right">
-                     <h3>Importação e Limpeza de Dados</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section grid" id="contact">
-            <div class="contact_container grid">
-               <div class="wrapper">
-                  <div class="text_wrapper">
-                     <div class="top">Contatos</div>
-                     <div class="bottom" aria-hidden="true">Contatos</div>
-                  </div>
-                  <h3 class="sub_title">get in touch</h3>
-                  <div class="contact_content">
-                     <div class="contactContain">
-                        <div class="contact_info" data-reveal="left">
-                           <h3 class="con_title">contact info</h3>
-                           <ul class="contact_details">
-                              <li class="contact_item">
-                                 <div class="contact_icon">
-                                    <i class="ri-mail-send-line"></i>
-                                 </div>
-                                 <div class="contact_method">
-                                    <span>email</span>
-                                    <div>andresaalves9@gmail.com</div>
-                                    <a href="mailto:andresaalves9@gmail.com" target="_blank">
-                                       <span>send <i class="ri-arrow-right-up-line"></i></span>
-                                    </a>
-                                 </div>
-                              </li>
-                              <li class="contact_item">
-                                 <div class="contact_icon">
-                                    <i class="ri-whatsapp-line"></i>
-                                 </div>
-                                 <div class="contact_method">
-                                    <span>whatsapp</span>
-                                    <div>(21)973021478</div>
-                                    <a href="" target="_blank">
-                                       <span>Enviar <i class="ri-arrow-right-up-line"></i></span>
-                                    </a>
-                                 </div>
-                              </li>
-                           </ul>
-                           <h3 class="con_title">Redes Sociais</h3>
-                           <ul class="contact_social_links icns">
-                              <li><a href="https://www.instagram.com/xndresa"><i class="ri-instagram-line"></i></a></li>
-                              <li><a href="https://www.linkedin.com/in/andresa9"><i class="ri-linkedin-line"></i></a></li>
-                           </ul>
-                        </div>
-                        <div class="contactForm_container" data-reveal="right">
-                           <h2>Vamos trabalhar <span>juntos</span></h2>
-                           <p>Respostas em até 48 horas!</p>
-                           <form action="" id="contact_form">
-                              <div class="input_group">
-                                 <input type="text" name="full_name" placeholder="name *" required>
-                              </div>
-                              <div class="input_group">
-                                 <input type="text" name="email" placeholder="email *" required autocomplete="off">
-                              </div>
-                              <div class="input_group">
-                                 <input type="text" name="subject" placeholder="your subject *" required>
-                              </div>
-                              <div class="input_group">
-                                 <textarea name="message" id="" placeholder="your message *" required></textarea>
-                              </div>
-                              <div class="input_group send_message">
-                                 <button class="submit_btn new_btn" type="submit">enviar mensagem</button>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer_container">
-            <div class="footer_section about">
-               <h3 class="sub_title">Sobre</h3>
-               <p>A passionate web designer and developer creating unique experiences with modern technology. 
-                  Let's build something amazing together!
-               </p>
-            </div>
-            <div class="footer_section links">
-               <h3 class="sub_title">Links</h3>
-               <ul>
-                  <li><a href="#home">Início</a></li>
-                  <li><a href="#about">Sobre</a></li>
-                  <li><a href="#portfolio">Projetos</a></li>
-                  <li><a href="#contact">Contatos</a></li>
-               </ul>
-            </div>
-            <div class="footer_section social">
-               <h3 class="sub_title">Vamos nos conectar!</h3>
-               <div class="social_icons icns">
-                  <a href="https://wa.me/qr/RAF54RUSZS4HI1" class="icon"><i class="ri-whatsapp-line"></i></a>
-                  <a href="https://www.linkedin.com/in/andresa9" class="icon"><i class="ri-linkedin-line"></i></a>
-                  <a href="https://www.instagram.com/xndresa" class="icon"><i class="ri-instagram-line"></i></a>
-               </div>
-            </div>
-            <div class="footer_section contact">
-               <h3 class="sub_title">Contatos</h3>
-               <p><i class="ri-mail-send-line icon"></i> andresaalves9@gmail.com</p>
-               <p><i class="ri-phone-line icon"></i> (21)973021478</p>
-               <p><i class="ri-map-pin-line icon"></i> Japeri, Rio de Janeiro</p>
-            </div>
-         </div>
-      </footer>
-      <div class="footer_bottom">
-         <p>@ 2025 Andresa. All Rights Reserved</p>
+     </article>
+     <article class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+      <img alt="Imagem do projeto 3 mostrando um app de tarefas com lista e checkboxes em preto e branco" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cb44ab43-9b8f-402a-5cc8-c8af792ce60a.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        App de Tarefas
+       </h3>
+       <p class="text-gray-700 dark:text-gray-300 flex-grow">
+        Aplicativo web para gerenciamento de tarefas com funcionalidades de adicionar, editar e remover, feito com Vue.js e Tailwind CSS.
+       </p>
+       <div class="mt-4 flex space-x-4 items-center">
+        <a aria-label="Ver projeto App de Tarefas no GitHub" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://github.com/seunome/app-tarefas" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-github mr-2">
+         </i>
+         GitHub
+        </a>
+        <a aria-label="Ver demo do projeto App de Tarefas" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://seunome.github.io/app-tarefas" rel="noopener noreferrer" target="_blank">
+         <i class="fas fa-external-link-alt mr-2">
+         </i>
+         Demo
+        </a>
+       </div>
       </div>
-      <!--========== SCROLL UP ==========-->
-      <button class="backtoTop" aria-label="Back to Top">
-         <i class="ri-arrow-up-line"></i>
-      </button>
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+     </article>
+     <article class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+      <img alt="Imagem do projeto 4 mostrando um blog minimalista com posts em preto e branco" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/bb462396-7ef4-459e-2780-47447541862c.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        Blog Minimalista
+       </h3>
+       <p class="text-gray-700 dark:text-gray-300 flex-grow">
+        Blog pessoal com design limpo e responsivo, desenvolvido com Next.js e estilizado com Tailwind CSS.
+       </p>
+       <div class="mt-4 flex space-x-4 items-center">
+        <a aria-label="Ver projeto Blog Minimalista no GitHub" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://github.com/seunome/blog-minimalista" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-github mr-2">
+         </i>
+         GitHub
+        </a>
+        <a aria-label="Ver demo do projeto Blog Minimalista" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://seunome.github.io/blog-minimalista" rel="noopener noreferrer" target="_blank">
+         <i class="fas fa-external-link-alt mr-2">
+         </i>
+         Demo
+        </a>
+       </div>
+      </div>
+     </article>
+     <article class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+      <img alt="Imagem do projeto 5 mostrando uma loja online com produtos em preto e branco" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/948f0ff8-cc1b-4fe3-c510-303b31a77f87.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        Loja Online
+       </h3>
+       <p class="text-gray-700 dark:text-gray-300 flex-grow">
+        Plataforma de e-commerce simples e funcional, construída com React, Redux e estilizada com Tailwind CSS.
+       </p>
+       <div class="mt-4 flex space-x-4 items-center">
+        <a aria-label="Ver projeto Loja Online no GitHub" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://github.com/seunome/loja-online" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-github mr-2">
+         </i>
+         GitHub
+        </a>
+        <a aria-label="Ver demo do projeto Loja Online" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://seunome.github.io/loja-online" rel="noopener noreferrer" target="_blank">
+         <i class="fas fa-external-link-alt mr-2">
+         </i>
+         Demo
+        </a>
+       </div>
+      </div>
+     </article>
+     <article class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+      <img alt="Imagem do projeto 6 mostrando um app de clima com ícones e temperatura em preto e branco" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/338476c1-9c19-40e3-42f4-c9265d47c1ad.jpg" width="600"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="text-xl font-semibold mb-2">
+        App de Clima
+       </h3>
+       <p class="text-gray-700 dark:text-gray-300 flex-grow">
+        Aplicativo para previsão do tempo com interface limpa, desenvolvido com React Native e estilizado em preto e branco.
+       </p>
+       <div class="mt-4 flex space-x-4 items-center">
+        <a aria-label="Ver projeto App de Clima no GitHub" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://github.com/seunome/app-clima" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-github mr-2">
+         </i>
+         GitHub
+        </a>
+        <a aria-label="Ver demo do projeto App de Clima" class="inline-flex items-center px-4 py-2 border border-black dark:border-white rounded-md text-black dark:text-white font-semibold hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" href="https://seunome.github.io/app-clima" rel="noopener noreferrer" target="_blank">
+         <i class="fas fa-external-link-alt mr-2">
+         </i>
+         Demo
+        </a>
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <!-- Contato -->
+   <section class="max-w-3xl mx-auto space-y-12" id="contato">
+    <h2 class="text-3xl font-bold border-b-4 border-black dark:border-white pb-2 w-max">
+     Contato
+    </h2>
+    <form action="mailto:seuemail@exemplo.com" aria-label="Formulário de contato" class="flex flex-col space-y-6" enctype="text/plain" method="POST">
+     <label class="flex flex-col">
+      <span class="mb-1 font-semibold">
+       Nome
+      </span>
+      <input class="border border-gray-400 dark:border-gray-600 rounded-md px-4 py-2 bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition" name="nome" placeholder="Seu nome completo" required="" type="text"/>
+     </label>
+     <label class="flex flex-col">
+      <span class="mb-1 font-semibold">
+       Email
+      </span>
+      <input class="border border-gray-400 dark:border-gray-600 rounded-md px-4 py-2 bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition" name="email" placeholder="seuemail@exemplo.com" required="" type="email"/>
+     </label>
+     <label class="flex flex-col">
+      <span class="mb-1 font-semibold">
+       Mensagem
+      </span>
+      <textarea class="border border-gray-400 dark:border-gray-600 rounded-md px-4 py-2 bg-white dark:bg-gray-900 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition" name="mensagem" placeholder="Escreva sua mensagem aqui" required="" rows="5"></textarea>
+     </label>
+     <button class="self-start px-8 py-3 border-2 border-black dark:border-white rounded-md font-semibold text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" type="submit">
+      Enviar
+     </button>
+    </form>
+    <div class="pt-6 border-t border-gray-300 dark:border-gray-700 flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
+     <div class="flex items-center space-x-4">
+      <i class="fas fa-phone-alt text-lg">
+      </i>
+      <span>
+       +55 (11) 99999-9999
+      </span>
+     </div>
+     <div class="flex items-center space-x-4">
+      <i class="fas fa-envelope text-lg">
+      </i>
+      <span>
+       seuemail@exemplo.com
+      </span>
+     </div>
+     <a aria-label="Baixar currículo em PDF" class="inline-flex items-center px-6 py-3 border-2 border-black dark:border-white rounded-md font-semibold text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-colors" download="Curriculo_SeuNome.pdf" href="https://seunome.github.io/curriculo.pdf">
+      <i class="fas fa-download mr-2">
+      </i>
+      Baixar Currículo
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white dark:bg-black border-t border-gray-300 dark:border-gray-700 py-6 mt-12">
+   <div class="max-w-7xl mx-auto px-6 text-center text-gray-600 dark:text-gray-400 text-sm">
+    © 2024 Seu Nome. Todos os direitos reservados.
+   </div>
+  </footer>
+  <script>
+   // Theme toggle
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlEl = document.documentElement;
+    const icon = themeToggleBtn.querySelector('i');
+
+    // Load theme from localStorage or system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      htmlEl.classList.add('dark');
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    } else {
+      htmlEl.classList.remove('dark');
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      if (htmlEl.classList.contains('dark')) {
+        htmlEl.classList.remove('dark');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+      } else {
+        htmlEl.classList.add('dark');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // Mobile menu toggle
+    const menuToggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggleBtn.addEventListener('click', () => {
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        menuToggleBtn.setAttribute('aria-label', 'Fechar menu');
+        menuToggleBtn.querySelector('i').classList.remove('fa-bars');
+        menuToggleBtn.querySelector('i').classList.add('fa-times');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuToggleBtn.setAttribute('aria-label', 'Abrir menu');
+        menuToggleBtn.querySelector('i').classList.remove('fa-times');
+        menuToggleBtn.querySelector('i').classList.add('fa-bars');
+      }
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuToggleBtn.setAttribute('aria-label', 'Abrir menu');
+        menuToggleBtn.querySelector('i').classList.remove('fa-times');
+        menuToggleBtn.querySelector('i').classList.add('fa-bars');
+      });
+    });
+  </script>
+ </body>
 </html>
